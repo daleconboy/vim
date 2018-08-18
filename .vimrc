@@ -162,7 +162,7 @@ endfunction
 
 
 " Personal preference color scheming
- colorscheme iceberg 
+colorscheme iceberg 
 "hi CursorLine                  ctermbg=235   cterm=none
 "hi CursorColumn                ctermbg=226
 hi LineNr      ctermbg=234
@@ -175,7 +175,6 @@ hi GitGutterChange ctermbg=234 ctermfg=75
 hi GitgutterChangeDelete ctermbg=234
 hi GitGutterDelete ctermbg=234
 
-hi LightlineRight_normal_0_1 cterm=none ctermfg=196
 " NERDCommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims=1
