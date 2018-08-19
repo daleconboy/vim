@@ -5,7 +5,7 @@ set nocompatible            " Make vim more useful
 set wildmenu                " Enhance command-line completion
 set ttyfast                 " Optimize for fast terminal connections
 set encoding=utf-8 nobomb   " Default to utf-8
-let mapleader=","           " Use `,` for leader
+let mapleader=","           " comma, comma, comma, chameleon
 set noerrorbells            " No bells for errors
 set visualbell              " No bells at all
 set updatetime=500          " Short update time for things like git-gutter
