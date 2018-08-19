@@ -11,10 +11,10 @@ set visualbell              " No bells at all
 set updatetime=500          " Short update time for things like git-gutter
 set autoread                " Reload files changed outside of vim
 
+
 " ============= display =============
 
 set shortmess=atI           " Don’t show the intro message when starting vim
-set termguicolors           " Better colors
 set number                  " Enable line numbers
 set cursorline              " Highlight current line
 set signcolumn=yes          " Always show the sign column
@@ -26,6 +26,10 @@ set ruler                   " Show the cursor position
 set noshowmode              " Mode reporting disabled in favor of Lightline
 set title                   " Show the filename in the window titlebar
 set showcmd                 " Show commands as you type
+set termguicolors           " Enables 24bit color. Escape codes needed for use inside tmux
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+
 
 " ============= movement/interaction =============
 
@@ -70,3 +74,4 @@ set nowrap                  " Default to no text wrapping
 " ============= buffers =============
 
 set hidden                  " Allow hidden buffers
+
