@@ -7,7 +7,6 @@ set ttyfast                 " Optimize for fast terminal connections
 set encoding=utf-8 nobomb   " Default to utf-8
 let mapleader=","           " comma, comma, comma, chameleon
 set noerrorbells            " No bells for errors
-set visualbell              " No bells at all
 set updatetime=500          " Short update time for things like git-gutter
 set autoread                " Reload files changed outside of vim
 
@@ -37,8 +36,8 @@ set esckeys                 " Allow cursor keys in insert mode
 set mouse=a                 " Enable mouse in all modes
 set nostartofline           " Don’t reset cursor to start of line when moving
 set scrolloff=8             " Scroll n lines before top/bottom of window
-set sidescrolloff=8         " Scroll n lines before left/right of window
-
+set sidescrolloff=5         " Scroll n lines before left/right of window
+set sidescroll=1            " Only scroll 1 col at a time horizontally
 
 " ============= search =============
 
@@ -75,3 +74,7 @@ set nowrap                  " Default to no text wrapping
 
 set hidden                  " Allow hidden buffers
 
+" ============= buffers =============
+
+set splitbelow              " New splits open to right/bottom
+set splitright
