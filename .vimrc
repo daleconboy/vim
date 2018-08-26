@@ -1,5 +1,5 @@
 
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 Plug 'dikiaap/minimalist'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
