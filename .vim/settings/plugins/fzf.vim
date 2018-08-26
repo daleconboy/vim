@@ -1,8 +1,8 @@
 
 " ==== mapppings ====
 
-nmap <C-p> :Files<CR>
-
+nnoremap <C-p> :Files<CR>
+nnoremap <C-i> :Buffers<CR>
 
 " ==== settings ====
 

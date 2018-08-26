@@ -1,6 +1,6 @@
 " ==== mapppings ====
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-o> :NERDTreeToggle<CR>
 
 
 " ==== settings ====

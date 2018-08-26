@@ -26,8 +26,8 @@ set noshowmode              " Mode reporting disabled in favor of Lightline
 set title                   " Show the filename in the window titlebar
 set showcmd                 " Show commands as you type
 set termguicolors           " Enables 24bit color. Escape codes needed for use inside tmux
-let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+let &t_8b="[48;2;%lu;%lu;%lum"
+let &t_8f="[38;2;%lu;%lu;%lum"
 
 
 " ============= movement/interaction =============
@@ -66,15 +66,16 @@ set shiftwidth=2
 set smartindent
 set autoindent
 set expandtab
-filetype indent on
+set textwidth=0
 set nowrap                  " Default to no text wrapping
+filetype indent on          " Auto detect file type indentation
 
 
 " ============= buffers =============
 
 set hidden                  " Allow hidden buffers
 
-" ============= buffers =============
+" ============= splits =============
 
 set splitbelow              " New splits open to right/bottom
 set splitright

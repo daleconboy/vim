@@ -4,17 +4,23 @@ noremap <Leader>w :w<CR>
 
 
 " Clear last search pattern
-nmap <leader>h :noh<CR>
+nnoremap <leader>h :noh<CR>
 
 " Split navigation
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <C-k> :wincmd k<CR>
+nnoremap <silent> <C-j> :wincmd j<CR>
+nnoremap <silent> <C-h> :wincmd h<CR>
+nnoremap <silent> <C-l> :wincmd l<CR>
 
 " Move normally between wrapped lines
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 " Add blank lines without entering insert
-nmap <Enter> o<Esc>
+nnoremap <Enter> o<Esc>
+
+" Buffer navigation
+set <M-h>=h
+set <M-l>=l
+nnoremap <M-h> :bprevious<CR>
+nnoremap <M-l> :bnext<CR>

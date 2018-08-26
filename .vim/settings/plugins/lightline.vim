@@ -6,6 +6,9 @@
 " ==== settings ====
 
 let g:lightline = {
+  \ 'enable': {
+  \   'tabline': 0
+  \ },
   \ 'colorscheme': 'deus_conboy',
   \ 'mode_map': {
   \   'n':      'NRM',
@@ -22,7 +25,7 @@ let g:lightline = {
   \ },
   \ 'subseparator': {
   \   'left': '│',
-  \   'right': '∙'
+  \   'right': '◇'
   \ },
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
